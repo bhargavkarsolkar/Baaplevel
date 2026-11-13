@@ -1,0 +1,99 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  gap: 30px;
+}
+
+.navbar-logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.navbar-search {
+  display: flex;
+  flex: 1;
+  max-width: 550px;
+}
+.navbar-notifications {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #374151;
+  transition: color 0.2s ease;
+}
+
+.navbar-notifications:hover {
+  color: #2563eb;
+}
+
+.navbar-notifications span {
+  font-size: 22px;
+}
+
+.navbar-notifications p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbar-search input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.navbar-search button {
+  padding: 0 20px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar-actions div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.navbar-actions span {
+  font-size: 22px;
+}
+
+.navbar-actions p {
+  font-size: 14px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .navbar-search {
+    order: 3;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+
+  .navbar-actions {
+    gap: 12px;
+  }
+}
