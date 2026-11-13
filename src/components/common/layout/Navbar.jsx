@@ -26,7 +26,7 @@ function Navbar() {
 
         <div className="navbar-wishlist">
           <span>♡</span>
-          <p>Wishlist</p>
+          <p>Wishlists</p>
         </div >
         <div className="navbar-notifications">
 <span>🔔</span>
